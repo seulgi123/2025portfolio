@@ -3,251 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>My Story</title>
+    <link rel="icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="lsg-portfolio-wrap">
-        <section class="section-intro">
-            <div class="my-story__container">
-                <div class="my-story">
-                    <span>MY</span><br>
-                    <span>ST</span>
-                    <svg class="my-story__svg" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="my-story__shape" x="10" y="10" rx="50" ry="50" fill="none" stroke="#f0eeeb" stroke-width="20"></rect>
-                    </svg>
-                    <span>RY</span>
-                </div>
-            </div>
-        </section>
-        <section class="section-work">
-            <div class="work-period">
-                <div class="work-period__year-group">
-                    <span class="work-period__start-year">2018</span>
-                    <span class="work-period__end-year">2025</span>
-                    <h2 class="work-period__title"><p>나의 걸어온 길</p></h2>
-                </div>
-            </div>
-            <div class="history-career">
-                <div class="history-career__container">
-                    <div class="history-career__item">
-                        <div class="history-career__company">
-                            <span>(주)어디어디</span>
-                            <span>(주)십이지</span>
-                            <span>(주)제이슨그룹</span>
-                            <span>퍼시픽링스코리아</span>
-                        </div>
-                        <div class="history-career__year">
-                            <span>2018~2022</span>
-                            <span>2022~2023</span>
-                            <span>2024~2024</span>
-                            <span>2024~2025</span>
-                        </div>
-                        <div class="history-career__role">
-                            <span>펜션 전문 웹에이전시</span>
-                            <span>웹에이전시</span>
-                            <span>이커머스</span>
-                            <span>골프 플랫폼</span>
-                        </div>
-
-                    </div>
-                    <!-- <img class="history-career__background" src="./img/history_circle_bg.png" alt="원 배경"> -->
-                    <div class="history-career__background">
-                        <svg viewBox="105 105 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="361" cy="361" r="256" fill="white" fill-opacity="0.2"/>
-                            <circle cx="361" cy="361" r="255.5" stroke="white" stroke-opacity="0.4"/>
-                            <circle cx="361" cy="361" r="177" fill="white" fill-opacity="0.3"/>
-                            <line x1="360.5" y1="106" x2="360.5" y2="133" stroke="white"/>
-                            <line x1="394.703" y1="108.237" x2="392.423" y2="125.083" stroke="white"/>
-                            <line x1="426.516" y1="114.56" x2="422.116" y2="130.98" stroke="white"/>
-                            <line x1="458.974" y1="125.572" x2="452.412" y2="141.255" stroke="white"/>
-                            <line x1="488.067" y1="139.914" x2="479.567" y2="154.636" stroke="white"/>
-                            <line x1="516.569" y1="158.952" x2="506.172" y2="172.401" stroke="white"/>
-                            <line x1="540.959" y1="180.334" x2="528.938" y2="192.355" stroke="white"/>
-                            <line x1="563.562" y1="206.101" x2="550.038" y2="216.401" stroke="white"/>
-                            <line x1="567.364" y1="242.433" x2="582.086" y2="233.933" stroke="white"/>
-                            <line x1="581.401" y1="271.18" x2="597.13" y2="264.731" stroke="white"/>
-                            <line x1="591.02" y1="299.884" x2="607.44" y2="295.484" stroke="white"/>
-                            <line x1="597.138" y1="331.284" x2="614.001" y2="329.126" stroke="white"/>
-                            <line x1="588" y1="361.5" x2="616" y2="361.5" stroke="white"/>
-                            <line x1="596.783" y1="393.414" x2="613.629" y2="395.694" stroke="white"/>
-                            <line x1="590.761" y1="423.082" x2="607.182" y2="427.482" stroke="white"/>
-                            <line x1="580.359" y1="453.335" x2="596.042" y2="459.897" stroke="white"/>
-                            <line x1="566.864" y1="480.433" x2="581.586" y2="488.933" stroke="white"/>
-                            <line x1="548.987" y1="506.963" x2="562.436" y2="517.36" stroke="white"/>
-                            <line x1="528.938" y1="529.645" x2="540.959" y2="541.666" stroke="white"/>
-                            <line x1="504.804" y1="550.644" x2="515.104" y2="564.168" stroke="white"/>
-                            <line x1="479.567" y1="567.364" x2="488.067" y2="582.086" stroke="white"/>
-                            <line x1="450.82" y1="581.401" x2="457.269" y2="597.13" stroke="white"/>
-                            <line x1="422.116" y1="591.02" x2="426.516" y2="607.44" stroke="white"/>
-                            <line x1="390.716" y1="597.138" x2="392.874" y2="614.001" stroke="white"/>
-                            <line x1="360.5" y1="588" x2="360.5" y2="616" stroke="white"/>
-                            <line x1="328.586" y1="596.783" x2="326.306" y2="613.629" stroke="white"/>
-                            <line x1="298.918" y1="590.761" x2="294.518" y2="607.182" stroke="white"/>
-                            <line x1="268.665" y1="580.359" x2="262.103" y2="596.042" stroke="white"/>
-                            <line x1="241.567" y1="566.864" x2="233.067" y2="581.586" stroke="white"/>
-                            <line x1="215.037" y1="548.987" x2="204.64" y2="562.437" stroke="white"/>
-                            <line x1="192.355" y1="528.938" x2="180.334" y2="540.959" stroke="white"/>
-                            <line x1="171.356" y1="504.804" x2="157.832" y2="515.104" stroke="white"/>
-                            <line x1="140.414" y1="488.933" x2="155.136" y2="480.433" stroke="white"/>
-                            <line x1="125.249" y1="458.194" x2="140.978" y2="451.745" stroke="white"/>
-                            <line x1="114.818" y1="427.482" x2="131.239" y2="423.082" stroke="white"/>
-                            <line x1="108.126" y1="393.865" x2="124.989" y2="391.708" stroke="white"/>
-                            <line x1="106" y1="361.5" x2="133" y2="361.5" stroke="white"/>
-                            <line x1="108.237" y1="327.297" x2="125.083" y2="329.577" stroke="white"/>
-                            <line x1="114.559" y1="295.484" x2="130.98" y2="299.884" stroke="white"/>
-                            <line x1="125.572" y1="263.026" x2="141.254" y2="269.588" stroke="white"/>
-                            <line x1="139.914" y1="233.933" x2="154.636" y2="242.433" stroke="white"/>
-                            <line x1="158.952" y1="205.431" x2="172.401" y2="215.828" stroke="white"/>
-                            <line x1="180.334" y1="181.041" x2="192.355" y2="193.062" stroke="white"/>
-                            <line x1="206.101" y1="158.438" x2="216.401" y2="171.962" stroke="white"/>
-                            <line x1="233.067" y1="140.414" x2="241.567" y2="155.136" stroke="white"/>
-                            <line x1="263.806" y1="125.249" x2="270.255" y2="140.978" stroke="white"/>
-                            <line x1="294.518" y1="114.818" x2="298.918" y2="131.239" stroke="white"/> 
-                            <line x1="328.135" y1="108.126" x2="330.292" y2="124.989" stroke="white"/>
+            <section class="section-intro">
+                <div class="my-story__container">
+                    <div class="my-story">
+                        <span>MY</span><br>
+                        <span>ST</span>
+                        <svg class="my-story__svg" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="my-story__shape" x="10" y="10" rx="50" ry="50" fill="none" stroke="#f0eeeb" stroke-width="20"></rect>
                         </svg>
+                        <span>RY</span>
                     </div>
                 </div>
-            </div>
-            <div class="history-work">
-                <div class="history-work__container">
-                    <div class="history-work__item">
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img01.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img02_02.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img03.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img04_02.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="history-work__item">
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img05.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img06.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img07.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img08.jpg" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="history-work__item">
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img09.png" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img10.png" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="history-work__group">
-                            <div class="history-work__img">
-                                <img src="./img/work_img11.png" alt="작업물 이미지">
-                                <span class="history-work__more-btn">
-                                    <img src="./img/more_view.png" alt="더보기 아이콘">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="history-work__item">
-                        <div class="history-work__img"><img src="./img/work_img05.jpg" alt="작업물 이미지"></div>
-                        <div class="history-work__img"><img src="./img/work_img05.jpg" alt="작업물 이미지"></div>
-                        <div class="history-work__img"><img src="./img/work_img05.jpg" alt="작업물 이미지"></div>
+            </section>
+            <section class="section-work">
+                <div class="work-period">
+                    <div class="work-period__year-group">
+                        <span class="work-period__start-year">2018</span>
+                        <span class="work-period__end-year">2026</span>
+                        <h2 class="work-period__title"><p>나의 걸어온 길</p></h2>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="history-career">
+                    <div class="history-career__container">
+                        <div class="history-career__item">
+                            <div class="history-career__company">
+                                <span>(주)어디어디</span>
+                                <span>(주)십이지</span>
+                                <span>(주)제이슨그룹</span>
+                                <span>퍼시픽링스코리아</span>
+                            </div>
+                            <div class="history-career__year">
+                                <span>2018.04~2022.07</span>
+                                <span>2022.08~2023.09</span>
+                                <span>2024.01~2024.07</span>
+                                <span>2024.09~2026.01</span>
+                            </div>
+                            <div class="history-career__role">
+                                <span>펜션 전문 웹에이전시</span>
+                                <span>웹에이전시</span>
+                                <span>이커머스</span>
+                                <span>골프 플랫폼</span>
+                            </div>
+
+                        </div>
+                        <div class="history-career__background">
+                            <svg viewBox="105 105 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="361" cy="361" r="256" fill="white" fill-opacity="0.2"/>
+                                <circle cx="361" cy="361" r="255.5" stroke="white" stroke-opacity="0.4"/>
+                                <circle cx="361" cy="361" r="177" fill="white" fill-opacity="0.3"/>
+                                <line x1="360.5" y1="106" x2="360.5" y2="133" stroke="white"/>
+                                <line x1="394.703" y1="108.237" x2="392.423" y2="125.083" stroke="white"/>
+                                <line x1="426.516" y1="114.56" x2="422.116" y2="130.98" stroke="white"/>
+                                <line x1="458.974" y1="125.572" x2="452.412" y2="141.255" stroke="white"/>
+                                <line x1="488.067" y1="139.914" x2="479.567" y2="154.636" stroke="white"/>
+                                <line x1="516.569" y1="158.952" x2="506.172" y2="172.401" stroke="white"/>
+                                <line x1="540.959" y1="180.334" x2="528.938" y2="192.355" stroke="white"/>
+                                <line x1="563.562" y1="206.101" x2="550.038" y2="216.401" stroke="white"/>
+                                <line x1="567.364" y1="242.433" x2="582.086" y2="233.933" stroke="white"/>
+                                <line x1="581.401" y1="271.18" x2="597.13" y2="264.731" stroke="white"/>
+                                <line x1="591.02" y1="299.884" x2="607.44" y2="295.484" stroke="white"/>
+                                <line x1="597.138" y1="331.284" x2="614.001" y2="329.126" stroke="white"/>
+                                <line x1="588" y1="361.5" x2="616" y2="361.5" stroke="white"/>
+                                <line x1="596.783" y1="393.414" x2="613.629" y2="395.694" stroke="white"/>
+                                <line x1="590.761" y1="423.082" x2="607.182" y2="427.482" stroke="white"/>
+                                <line x1="580.359" y1="453.335" x2="596.042" y2="459.897" stroke="white"/>
+                                <line x1="566.864" y1="480.433" x2="581.586" y2="488.933" stroke="white"/>
+                                <line x1="548.987" y1="506.963" x2="562.436" y2="517.36" stroke="white"/>
+                                <line x1="528.938" y1="529.645" x2="540.959" y2="541.666" stroke="white"/>
+                                <line x1="504.804" y1="550.644" x2="515.104" y2="564.168" stroke="white"/>
+                                <line x1="479.567" y1="567.364" x2="488.067" y2="582.086" stroke="white"/>
+                                <line x1="450.82" y1="581.401" x2="457.269" y2="597.13" stroke="white"/>
+                                <line x1="422.116" y1="591.02" x2="426.516" y2="607.44" stroke="white"/>
+                                <line x1="390.716" y1="597.138" x2="392.874" y2="614.001" stroke="white"/>
+                                <line x1="360.5" y1="588" x2="360.5" y2="616" stroke="white"/>
+                                <line x1="328.586" y1="596.783" x2="326.306" y2="613.629" stroke="white"/>
+                                <line x1="298.918" y1="590.761" x2="294.518" y2="607.182" stroke="white"/>
+                                <line x1="268.665" y1="580.359" x2="262.103" y2="596.042" stroke="white"/>
+                                <line x1="241.567" y1="566.864" x2="233.067" y2="581.586" stroke="white"/>
+                                <line x1="215.037" y1="548.987" x2="204.64" y2="562.437" stroke="white"/>
+                                <line x1="192.355" y1="528.938" x2="180.334" y2="540.959" stroke="white"/>
+                                <line x1="171.356" y1="504.804" x2="157.832" y2="515.104" stroke="white"/>
+                                <line x1="140.414" y1="488.933" x2="155.136" y2="480.433" stroke="white"/>
+                                <line x1="125.249" y1="458.194" x2="140.978" y2="451.745" stroke="white"/>
+                                <line x1="114.818" y1="427.482" x2="131.239" y2="423.082" stroke="white"/>
+                                <line x1="108.126" y1="393.865" x2="124.989" y2="391.708" stroke="white"/>
+                                <line x1="106" y1="361.5" x2="133" y2="361.5" stroke="white"/>
+                                <line x1="108.237" y1="327.297" x2="125.083" y2="329.577" stroke="white"/>
+                                <line x1="114.559" y1="295.484" x2="130.98" y2="299.884" stroke="white"/>
+                                <line x1="125.572" y1="263.026" x2="141.254" y2="269.588" stroke="white"/>
+                                <line x1="139.914" y1="233.933" x2="154.636" y2="242.433" stroke="white"/>
+                                <line x1="158.952" y1="205.431" x2="172.401" y2="215.828" stroke="white"/>
+                                <line x1="180.334" y1="181.041" x2="192.355" y2="193.062" stroke="white"/>
+                                <line x1="206.101" y1="158.438" x2="216.401" y2="171.962" stroke="white"/>
+                                <line x1="233.067" y1="140.414" x2="241.567" y2="155.136" stroke="white"/>
+                                <line x1="263.806" y1="125.249" x2="270.255" y2="140.978" stroke="white"/>
+                                <line x1="294.518" y1="114.818" x2="298.918" y2="131.239" stroke="white"/> 
+                                <line x1="328.135" y1="108.126" x2="330.292" y2="124.989" stroke="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-work">
+                    <div class="history-work__container">
+                        <div class="history-work__item">
+                            <div class="history-work__group">
+                                <a href="https://aframepoolvilla.co.kr" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img01.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="history-work__group">
+                                <a href="http://gonggamga.com" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img02_02.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="history-work__group">
+                                <a href="http://deltadivingresort.com" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img03.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="history-work__group">
+                                <a href="https://www.cestri.co.kr" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img04_02.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="history-work__item history-work__sibizi">
+                            <div class="history-work__group">
+                                <a href="http://www.pigeon.co.kr" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img05.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="history-work__group">
+                                <a href="https://www.hyundai-imc.com" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img06.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="history-work__group">
+                                <a href="http://dalseomuseum.kr" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img07.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="history-work__group">
+                                <a href="https://doubleflag.co.kr/" target="_blank" class="history-work__img">
+                                    <img src="./img/work_img08.jpg" alt="작업물 이미지">
+                                    <span class="history-work__more-btn">
+                                        <img src="./img/more_view.png" alt="더보기 아이콘">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="json-group__project">
+                    <div class="json-group__project-img">
+                        <div class="project-img"><img src="./img/work_img09.png" alt="공구마켓 이미지"></div>
+                        <div class="project-img"><img src="./img/work_img10.png" alt="할인중독 이미지"></div>
+                        <div class="project-img"><img src="./img/work_img11.png" alt="심쿵할인 이미지"></div>
+                    </div>
+            
+                
+                    <ul class="json-group__project-list">
+                        <li>
+                            <h3><span>01</span>MARKET09</h3> 
+                        </li>
+                        <li>
+                            <h3><span>02</span>SALE09</h3>
+                        </li>
+                        <li>
+                            <h3><span>03</span>SIMSALE</h3>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="pacific__project">
+                    <div class="pacific__project-main">
+                        <img class="project-img" src="./img/plk_img01.png" alt="plk앱 이미지">
+                    </div>
+                    <div class="pacific__project-list">
+                        <img class="project-img" src="./img/plk_img02.jpg" alt="plk앱 이미지">
+                        <img class="project-img" src="./img/plk_img03.jpg" alt="plk앱 이미지">
+                        <img class="project-img" src="./img/plk_img04.jpg" alt="plk앱 이미지">
+                        <img class="project-img" src="./img/plk_img05.jpg" alt="plk앱 이미지">
+                    </div>
+                </div>
+            </section>
+     
     </div>
     
     <script>
-
+        const portfolioWrap = document.querySelector('.lsg-portfolio-wrap');
         const sectionIntro = document.querySelector('.section-intro');
+        const workPeriod = document.querySelector('.work-period');
         const workPeriodYear = document.querySelector('.work-period__year-group');
         const workPeriedStartYear = document.querySelector('.work-period__start-year');
         const workPeriedTitle = document.querySelector('.work-period .work-period__title p');
         const historyCareer = document.querySelector('.history-career');
         const historyCareerBg = document.querySelector('.history-career__background');
         const historyCareerBgLine = document.querySelectorAll('.history-career__background svg line');
+        const historyCareerItem = document.querySelector('.history-career__item')
         const historyCareerSpan = document.querySelectorAll('.history-career__item span');
         const historyWorkItem = document.querySelectorAll('.history-work__item');
-        
         const myStory = document.querySelector('.my-story');
         const myStoryContainer = document.querySelector('.my-story__container');
         const myStorySvg = document.querySelector('.my-story__svg');
         const myStoryShape = document.querySelector('.my-story__shape');
-        
+        const jsonGroupProject =document.querySelector('.json-group__project');
+        const pacificProject =document.querySelector('.pacific__project');
+
 
         const historyFadeInStart = 2000;   // 2000px부터 시작
         const historyFadeInDuration = 400; // 400px 구간 동안 나타남
+
 
         // 배경 원
         setTimeout(function(){
             sectionIntro.classList.add('active');
         },1200)
         
+
+        
+
         // story svg 모션
         let myStorySvgMaxWidth;
+        let myStoryBaseHeight;
 
         // 함수로 최대값 설정
         function setMyStorySvgMaxWidth() {
@@ -258,17 +276,35 @@
                 myStorySvgMaxWidth = 200;
             }
         }
+
+        // 현재 CSS height 값을 읽어서 기준값으로 저장
+        function setMyStoryBaseHeight() {
+            myStoryBaseHeight = myStoryShape.getBoundingClientRect().height;
+        }
+
+
         // 처음 한 번 실행 : 해상도 줄인 상태에서 새로고침하면 myStorySvgMaxWidth 값이 없기 때문에 실행해준다 
         setMyStorySvgMaxWidth();
+        setMyStoryBaseHeight();
 
         window.addEventListener('resize',() => {
             setMyStorySvgMaxWidth();
         })
-
+        window.addEventListener('resize', setMyStoryBaseHeight);
 
         window.addEventListener('scroll', () => {
             let windowScroll = window.scrollY;
+            let jsonGroupTop = jsonGroupProject.offsetTop;
             
+            // 배경색
+            if (windowScroll >= jsonGroupTop - 700 && windowScroll < jsonGroupTop + 1000) {
+                portfolioWrap.classList.add('active');
+            } else {
+                portfolioWrap.classList.remove('active');
+            }
+
+
+
             // story svg 모션
             let myStorySvgWidth = windowScroll + 100;
             if (myStorySvgWidth > myStorySvgMaxWidth) myStorySvgWidth = myStorySvgMaxWidth;  
@@ -287,11 +323,13 @@
             if (windowScroll > 1500) myStoryTop = 170;
             myStory.style.transform = `translate(0, -${myStoryTop}%) scale(${myStoryScale})`;
 
-            let myStoryHeight = 100 + ((windowScroll - 1200) / 500) * 80;
-            if (windowScroll < 1200) myStoryHeight = 100;
-            if (windowScroll > 2000) myStoryHeight = 180;
+            let myStoryHeight = myStoryBaseHeight + ((windowScroll - 1200) / 500) * 80;
+            if (windowScroll < 1200) myStoryHeight = myStoryBaseHeight;
+            if (windowScroll > 2000) myStoryHeight = myStoryBaseHeight + 80;
             myStorySvg.style.height = (myStoryHeight + 20) + 'px';
             myStoryShape.style.height = myStoryHeight + 'px';
+
+
 
 
             //1700px	0	0 / 500 = 0	1 - 0 = 1.0	🔆 완전 불투명
@@ -304,9 +342,7 @@
 
 
 
-            
-
-            console.log(windowScroll)
+        
 
             // 연도 opacity 모션
             let opacity = 0;
@@ -366,30 +402,26 @@
 
           
             let careerRotate = (windowScroll - 7100) / 40;
-
             if (careerRotate < 0) careerRotate = 0;
             historyCareerBg.style.transform = `translate(-50%, -50%) rotate(${careerRotate}deg)`;   
 
 
-           
+
+
+            // offsetTop 값들을 미리 배열에 저장
+            const topValues = [];
+            historyWorkItem.forEach(el => {
+                topValues.push(el.offsetTop);
+            });
+            let jsonProjectTop = jsonGroupProject.offsetTop;
+            let pacificProjectTop = pacificProject.offsetTop;
             
-        });
 
-        
-         
-        // offsetTop 값들을 미리 배열에 저장
-        const topValues = [];
-        historyWorkItem.forEach(el => {
-            topValues.push(el.offsetTop);
-        });
-        console.log(topValues); // [4702, 7181, 9660]
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > topValues[3] - 800) {
+            if (window.scrollY > pacificProjectTop + 300) {
                 historyCareerSpan.forEach(el => {
                     el.style.transform = 'translateY(-300%)';
                 });
-            } else if (window.scrollY > topValues[2] - 800) {
+            } else if (window.scrollY > jsonProjectTop - 1800) {
                 historyCareerSpan.forEach(el => {
                     el.style.transform = 'translateY(-200%)';
                 });
@@ -402,9 +434,80 @@
                     el.style.transform = 'translateY(0)';
                 });
             }
+            
+            
+            
+            // 원 배경 scale 조절
+            /*if (windowScroll > 15500){
+                historyCareerBg.style.transform = `translate(-50%, -120%) scale(0.05)`; 
+                historyCareerItem.style.transform = `translate(-50%, -323%) scale(0.05)`; 
+            } else {
+                historyCareerBg.style.transform = `translate(-50%, -50%) scale(1)`; 
+                historyCareerItem.style.transform = `translate(-50%, -50%) scale(1)`;  
+            }*/
+           
+
+            if (windowScroll >= 16000 && windowScroll < 17500){ // 16000 ~ 17500 사이
+                historyCareer.style.visibility = 'hidden';
+                workPeriod.style.visibility = 'hidden';
+
+                historyCareerBg.style.transform = `translate(-50%, -50%) scale(1)`; 
+                historyCareerBg.style.opacity = 0.4; 
+                historyCareerItem.style.transform = `translate(-50%, -50%) scale(1)`; 
+                
+            } else if (windowScroll >= 18600 && windowScroll < 20000){ // 18600 ~ 20000 사이
+                
+                historyCareerBg.style.transform = `translate(-50%, -120%) scale(0.05)`; 
+                historyCareerBg.style.opacity = 0; 
+                historyCareerItem.style.transform = `translate(-50%, -323%) scale(0.05)`; 
+                historyCareer.style.visibility = 'hidden';
+                workPeriod.style.visibility = 'hidden';
+
+            } else {
+                historyCareer.style.visibility = 'visible';
+                workPeriod.style.visibility = 'visible';
+
+                historyCareerBg.style.transform = `translate(-50%, -50%) scale(1)`; 
+                historyCareerBg.style.opacity = 0.4; 
+                historyCareerItem.style.transform = `translate(-50%, -50%) scale(1)`; 
+            }
+
+
+            // 퍼시픽링스 프로젝트 모션
+            if (window.scrollY > pacificProjectTop + 1300) {
+                pacificProject.classList.add('active');
+            } else {
+                pacificProject.classList.remove('active');
+            }
+            
         });
 
+        // 제이슨그룹 프로젝트 모션
+        let jsonProject = $(".json-group__project");
+        let jsonGroupImgGroup = jsonProject.find('.json-group__project-img');
+        let jsonGroupImgGroupImg = jsonGroupImgGroup.find('.project-img');
+        let jsonGroupList = jsonProject.find('.json-group__project-list li');
 
+        
+        
+        jsonProject.mousemove(function(e){
+            gsap.to(jsonGroupImgGroup, {duration: 0.3, left: e.clientX -5, top: e.clientY -5});
+        });
+
+        jsonProject.mouseout(function(){
+            jsonGroupImgGroupImg.removeClass('active');
+        });
+        
+        jsonGroupList.mousemove(function(){
+            let idx = $(this).index();
+            jsonGroupList.removeClass('active');
+            $(this).addClass('active');
+            jsonGroupImgGroupImg.eq(idx).addClass('active');
+        });
+         
+        
+
+        
        
         
     </script>

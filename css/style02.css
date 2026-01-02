@@ -1,0 +1,16 @@
+.lsg-portfolio-wrap {width: 1905px;margin: 0 auto;}
+
+.section-intro {height: 320vh;}
+.my-story__container {position: fixed;width: 1905px;height: 100vh;background: url(../img/my_story_bg.jpg) 0 0 no-repeat;background-size: cover;}
+.my-story {position: absolute;top: 50%;transform: translate(0, -50%);text-align: center;width: 1905px;transition: all 0.5s cubic-bezier(0.35, 1.5, 0.6, 1);}
+.my-story span {font-size: 15rem;color: #f0eeeb;font-weight: 700;text-align: center;transition: all 0.5s cubic-bezier(0.35, 1.5, 0.6, 1);}
+.my-story__svg {width: 120px;height: 120px;transition: all 0.5s cubic-bezier(0.35, 1.5, 0.6, 1);}
+.my-story__shape {width: 100px;height: 100px;transition: all 0.5s cubic-bezier(0.35, 1.5, 0.6, 1)}
+
+
+/* @media(max-width: 1024px){
+    .my-story span {font-size: 7rem;}
+    .my-story__svg {width: 60px;height: 60px;}
+    .my-story__shape {width: 44px;height: 44px;stroke-width: 12px;rx: 25;ry: 25;}
+} */
+

@@ -22,6 +22,7 @@ time, mark, audio, video {
 	color: #363951;
 	font-weight: 400;
 	font-size: 1.6rem;
+	box-sizing: border-box;
 }
 html {font-size: 10px;}
 /* HTML5 display-role reset for older browsers */
