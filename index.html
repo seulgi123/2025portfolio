@@ -20,6 +20,15 @@
 </head>
 <body>
     <div class="lsg-portfolio-wrap">
+        
+            <header class="quick-menu">
+                <ul>
+                    <li class="active" data-company="(주)어디어디"></li>
+                    <li data-company="(주)십이지"></li>
+                    <li data-company="(주)제이슨그룹"></li>
+                    <li data-company="퍼시픽링스코리아"></li>
+                </ul>    
+            </header>
             <section class="section-intro">
                 <div class="my-story__container">
                     <div class="my-story">
@@ -30,6 +39,11 @@
                         </svg>
                         <span>RY</span>
                     </div>
+
+                    <div class="my-story__firefly">
+                        <canvas id="firefly"></canvas>
+                    </div>
+
                 </div>
             </section>
             <section class="section-work">
@@ -193,45 +207,123 @@
                     </div>
                 </div>
 
-                <div class="json-group__project">
-                    <div class="json-group__project-img">
-                        <div class="project-img"><img src="./img/work_img09.png" alt="공구마켓 이미지"></div>
-                        <div class="project-img"><img src="./img/work_img10.png" alt="할인중독 이미지"></div>
-                        <div class="project-img"><img src="./img/work_img11.png" alt="심쿵할인 이미지"></div>
+                <div class="jsongroup-project">
+                    <div class="jsongroup-project__img-group">
+                        <div class="jsongroup-project__img"><img src="./img/work_img09.png" alt="공구마켓 이미지"></div>
+                        <div class="jsongroup-project__img"><img src="./img/work_img10.png" alt="할인중독 이미지"></div>
+                        <div class="jsongroup-project__img"><img src="./img/work_img11.png" alt="심쿵할인 이미지"></div>
                     </div>
             
-                
-                    <ul class="json-group__project-list">
-                        <li>
-                            <h3><span>01</span>MARKET09</h3> 
-                        </li>
-                        <li>
-                            <h3><span>02</span>SALE09</h3>
-                        </li>
-                        <li>
-                            <h3><span>03</span>SIMSALE</h3>
-                        </li>
+                    <ul class="jsongroup-project__list">
+                        <li><h3><span>01</span>MARKET09</h3> </li>
+                        <li><h3><span>02</span>SALE09</h3></li>
+                        <li><h3><span>03</span>SIMSALE</h3></li>
                     </ul>
+
+                    <div class="jsongroup-bg">   
+            
+                        <svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path class="path" stroke="black" fill="#222" stroke-width="3" vector-effect="non-scaling-stroke" d="M 0 100 L 100 100 100 100 0 100 C 0 0, 0 0, 0 100"/>
+                        </svg>
+
+                        <div class="jsongroup-bg__content">
+
+                            <div class="jsongroup-bg__item">
+                                <div class="jsongroup-bg__container">
+                                    <div class="jsongroup-bg__info">
+                                        <h4>마켓공구</h4>
+                                        <a href="market09.kr" class="jsongroup-bg__link" target="_blank">market09.kr <img src="./img/arrow_right.png" alt="화살표"></a>
+                                        <p class="jsongroup-bg__desc">
+                                            - 기간 : 2022.09~ 2022.11 <br>
+                                            - 작업방식 : 하드코딩 <br>
+                                            - 기여도 : 퍼블리싱(기여도 100% / 사용자, 관리자 페이지 100%)
+                                        </p>
+                                    </div>
+                                    <div class="jsongroup-bg__img">
+                                        <video src="./img/jason_vod01.mp4" muted autoplay playsinline></video>
+                                        <img src="./img/phone_bg.png" alt="아이폰 목업 이미지">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="jsongroup-bg__item">
+                                <div class="jsongroup-bg__container">
+                                    <div class="jsongroup-bg__info">
+                                        <h4>할인중독</h4>
+                                        <a href="sale09.kr" class="jsongroup-bg__link" target="_blank">sale09.kr <img src="./img/arrow_right.png" alt="화살표"></a>
+                                        <p class="jsongroup-bg__desc">
+                                            - 요약 : 현대제철 자회사인 현대 IMC 의 신규 홈페이지 구축 프로젝트 <br>
+                                            - 기간 : 2023.03 ~ 2023.05 <br>
+                                            - 작업방식 : 하드코딩 <br>
+                                            - 기여도 : 퍼블리싱(기여도 100% / 사용자, 관리자 페이지 100%)
+                                        </p>
+                                    </div>
+                                    <div class="jsongroup-bg__img">
+                                        <video src="./img/jason_vod01.mp4" muted autoplay playsinline></video>
+                                        <img src="./img/phone_bg.png" alt="아이폰 목업 이미지">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="jsongroup-bg__item">
+                                <div class="jsongroup-bg__container">
+                                    <div class="jsongroup-bg__info">
+                                        <h4>심쿵할인</h4>
+                                        <a href="sale09.kr" class="jsongroup-bg__link" target="_blank">sale09.kr <img src="./img/arrow_right.png" alt="화살표"></a>
+                                        <p class="jsongroup-bg__desc">
+                                            - 요약 : 현대제철 자회사인 현대 IMC 의 신규 홈페이지 구축 프로젝트 <br>
+                                            - 기간 : 2023.03 ~ 2023.05 <br>
+                                            - 작업방식 : 하드코딩 <br>
+                                            - 기여도 : 퍼블리싱(기여도 100% / 사용자, 관리자 페이지 100%)
+                                        </p>
+                                    </div>
+                                    <div class="jsongroup-bg__img">
+                                        <video src="./img/jason_vod01.mp4" muted autoplay playsinline></video>
+                                        <img src="./img/phone_bg.png" alt="아이폰 목업 이미지">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <img class="proj_close cursor_point" src="./img/project_close.png" alt="닫기버튼">
+                        </div>
+                    </div>
                 </div>
 
 
-                <div class="pacific__project">
-                    <div class="pacific__project-main">
-                        <img class="project-img" src="./img/plk_img01.png" alt="plk앱 이미지">
-                    </div>
-                    <div class="pacific__project-list">
-                        <img class="project-img" src="./img/plk_img02.jpg" alt="plk앱 이미지">
-                        <img class="project-img" src="./img/plk_img03.jpg" alt="plk앱 이미지">
-                        <img class="project-img" src="./img/plk_img04.jpg" alt="plk앱 이미지">
-                        <img class="project-img" src="./img/plk_img05.jpg" alt="plk앱 이미지">
+                <div class="pacific-project">
+                    <h3>Pacificlinks App</h3>
+                    <div class="pacific-project__content">
+                        <div class="pacific-project__main">
+                            <img class="pacific-project__img" src="./img/plk_img01.png" alt="plk앱 이미지">
+                        </div>
+                        <div class="pacific-project__list">
+                            <img class="pacific-project__img" src="./img/plk_img02.jpg" alt="plk앱 이미지">
+                            <img class="pacific-project__img" src="./img/plk_img03.jpg" alt="plk앱 이미지">
+                            <img class="pacific-project__img" src="./img/plk_img04.jpg" alt="plk앱 이미지">
+                            <img class="pacific-project__img" src="./img/plk_img05.jpg" alt="plk앱 이미지">
+                        </div>
                     </div>
                 </div>
+
+
+
+
             </section>
      
+
+            <footer>
+
+            </footer>
+
+
+
     </div>
     
     <script>
+ 
         const portfolioWrap = document.querySelector('.lsg-portfolio-wrap');
+        const quickMenu = document.querySelector('.quick-menu');
+        const quickMenuLi = document.querySelectorAll('.quick-menu li');
         const sectionIntro = document.querySelector('.section-intro');
         const workPeriod = document.querySelector('.work-period');
         const workPeriodYear = document.querySelector('.work-period__year-group');
@@ -242,13 +334,16 @@
         const historyCareerBgLine = document.querySelectorAll('.history-career__background svg line');
         const historyCareerItem = document.querySelector('.history-career__item')
         const historyCareerSpan = document.querySelectorAll('.history-career__item span');
+        const historyWork = document.querySelector('.history-work');
         const historyWorkItem = document.querySelectorAll('.history-work__item');
         const myStory = document.querySelector('.my-story');
         const myStoryContainer = document.querySelector('.my-story__container');
         const myStorySvg = document.querySelector('.my-story__svg');
         const myStoryShape = document.querySelector('.my-story__shape');
-        const jsonGroupProject =document.querySelector('.json-group__project');
-        const pacificProject =document.querySelector('.pacific__project');
+        const jsonGroupProject =document.querySelector('.jsongroup-project');
+        const pacificProject =document.querySelector('.pacific-project');
+        const pacificProjectTitle =document.querySelector('.pacific-project h3');
+        
 
 
         const historyFadeInStart = 2000;   // 2000px부터 시작
@@ -273,7 +368,7 @@
             if (windowWidth > 1024) {
                 myStorySvgMaxWidth = 400;
             } else {
-                myStorySvgMaxWidth = 200;
+                myStorySvgMaxWidth = 180;
             }
         }
 
@@ -296,6 +391,7 @@
             let windowScroll = window.scrollY;
             let jsonGroupTop = jsonGroupProject.offsetTop;
             
+
             // 배경색
             if (windowScroll >= jsonGroupTop - 700 && windowScroll < jsonGroupTop + 1000) {
                 portfolioWrap.classList.add('active');
@@ -303,7 +399,15 @@
                 portfolioWrap.classList.remove('active');
             }
 
-
+            
+            //let historyWorkTop = historyWork.offsetTop - 2100;
+            const offset = historyWork.offsetHeight * 0.4;
+            const historyWorkTop = historyWork.offsetTop - offset;
+            if(windowScroll >= historyWorkTop){
+                quickMenu.style.opacity = 1;
+            } else {
+                quickMenu.style.opacity = 0;
+            }
 
             // story svg 모션
             let myStorySvgWidth = windowScroll + 100;
@@ -410,83 +514,80 @@
 
             // offsetTop 값들을 미리 배열에 저장
             const topValues = [];
+        
             historyWorkItem.forEach(el => {
                 topValues.push(el.offsetTop);
             });
-            let jsonProjectTop = jsonGroupProject.offsetTop;
-            let pacificProjectTop = pacificProject.offsetTop;
-            
 
-            if (window.scrollY > pacificProjectTop + 300) {
-                historyCareerSpan.forEach(el => {
-                    el.style.transform = 'translateY(-300%)';
-                });
-            } else if (window.scrollY > jsonProjectTop - 1800) {
+            let jsonProjectTop = jsonGroupProject.offsetTop;
+            const jsonGrouHeight = jsonGroupProject.offsetHeight * 0.8;
+
+            let pacificProjectTop = pacificProject.offsetTop;
+
+            if (window.scrollY > pacificProjectTop) {
+                //historyCareerSpan.forEach(el => {
+                //    el.style.transform = 'translateY(-300%)';
+                //});
+                quickMenuLi.forEach(li => li.classList.remove('active'));
+                quickMenuLi[3].classList.add('active');
+            } else if (window.scrollY > jsonProjectTop - jsonGrouHeight) {
                 historyCareerSpan.forEach(el => {
                     el.style.transform = 'translateY(-200%)';
                 });
+                quickMenuLi.forEach(li => li.classList.remove('active'));
+                quickMenuLi[2].classList.add('active');
             } else if (window.scrollY > topValues[1] - 800) {
                 historyCareerSpan.forEach(el => {
                     el.style.transform = 'translateY(-100%)';
                 });
+                quickMenuLi.forEach(li => li.classList.remove('active'));
+                quickMenuLi[1].classList.add('active');
             } else {
                 historyCareerSpan.forEach(el => {
                     el.style.transform = 'translateY(0)';
                 });
+                quickMenuLi.forEach(li => li.classList.remove('active'));
+                quickMenuLi[0].classList.add('active');
             }
             
             
             
-            // 원 배경 scale 조절
-            /*if (windowScroll > 15500){
-                historyCareerBg.style.transform = `translate(-50%, -120%) scale(0.05)`; 
-                historyCareerItem.style.transform = `translate(-50%, -323%) scale(0.05)`; 
-            } else {
-                historyCareerBg.style.transform = `translate(-50%, -50%) scale(1)`; 
-                historyCareerItem.style.transform = `translate(-50%, -50%) scale(1)`;  
-            }*/
-           
-
-            if (windowScroll >= 16000 && windowScroll < 17500){ // 16000 ~ 17500 사이
+            // 원 배경 조절
+            if (windowScroll >= jsonGroupTop - 600){ 
                 historyCareer.style.visibility = 'hidden';
                 workPeriod.style.visibility = 'hidden';
-
-                historyCareerBg.style.transform = `translate(-50%, -50%) scale(1)`; 
-                historyCareerBg.style.opacity = 0.4; 
-                historyCareerItem.style.transform = `translate(-50%, -50%) scale(1)`; 
-                
-            } else if (windowScroll >= 18600 && windowScroll < 20000){ // 18600 ~ 20000 사이
-                
-                historyCareerBg.style.transform = `translate(-50%, -120%) scale(0.05)`; 
-                historyCareerBg.style.opacity = 0; 
-                historyCareerItem.style.transform = `translate(-50%, -323%) scale(0.05)`; 
-                historyCareer.style.visibility = 'hidden';
-                workPeriod.style.visibility = 'hidden';
-
             } else {
                 historyCareer.style.visibility = 'visible';
                 workPeriod.style.visibility = 'visible';
+            }
 
-                historyCareerBg.style.transform = `translate(-50%, -50%) scale(1)`; 
-                historyCareerBg.style.opacity = 0.4; 
-                historyCareerItem.style.transform = `translate(-50%, -50%) scale(1)`; 
+
+            if (windowScroll >= jsonGroupTop - 600 && windowScroll < pacificProjectTop) {
+                quickMenu.classList.add('change-color');
+            } else {
+               quickMenu.classList.remove('change-color');
             }
 
 
             // 퍼시픽링스 프로젝트 모션
-            if (window.scrollY > pacificProjectTop + 1300) {
+            if (window.scrollY > pacificProjectTop + 500) {
                 pacificProject.classList.add('active');
             } else {
                 pacificProject.classList.remove('active');
+            }
+            if (window.scrollY > pacificProjectTop + 200) {
+                pacificProjectTitle.style.backgroundSize = '100%';
+            } else {
+                pacificProjectTitle.style.backgroundSize = '0';
             }
             
         });
 
         // 제이슨그룹 프로젝트 모션
-        let jsonProject = $(".json-group__project");
-        let jsonGroupImgGroup = jsonProject.find('.json-group__project-img');
-        let jsonGroupImgGroupImg = jsonGroupImgGroup.find('.project-img');
-        let jsonGroupList = jsonProject.find('.json-group__project-list li');
+        let jsonProject = $(".jsongroup-project");
+        let jsonGroupImgGroup = jsonProject.find('.jsongroup-project__img-group');
+        let jsonGroupImgGroupImg = jsonGroupImgGroup.find('.jsongroup-project__img');
+        let jsonGroupList = jsonProject.find('.jsongroup-project__list li');
 
         
         
@@ -507,9 +608,133 @@
          
         
 
+        //svg 이벤트
+        const path = document.querySelector('.path');
+        const projectBg = document.querySelector('.jsongroup-bg');
+
+        const projectItems = $('.jsongroup-bg .jsongroup-bg__item');
+        const projectClose = $('.proj_close');
+        const projectBtns = $('.jsongroup-project .jsongroup-project__list li');
+
+        /* -----------------------
+        SVG 애니메이션 로직
+        ----------------------- */
+        let isOpen = false;
+        let y = 100;
+        let c = 100;
+        let rafId = null;
+
+        function lerp(start, end, t) {
+            return start * (1 - t) + end * t;
+        }
+
+        function getPath(y, c) {
+            return `M 0 ${y} L 0 100 100 100 100 ${y} C 50 ${c}, 50 ${c}, 0 ${y}`;
+        }
+
+        function animate() {
+            const targetY = isOpen ? 0 : 100;
+            const targetC = isOpen ? 0 : 100;
+
+            y = lerp(y, targetY, 0.06);
+            c = lerp(c, targetC, 0.08);
+
+            path.setAttribute('d', getPath(y, c));
+
+            const isFinished =
+                Math.abs(y - targetY) < 0.3 &&
+                Math.abs(c - targetC) < 0.3;
+
+            if (isFinished) {
+                path.setAttribute('d', getPath(targetY, targetC));
+                rafId = null;
+                return;
+            }
+
+            rafId = requestAnimationFrame(animate);
+        }
+
+        function openProject() {
+            if (isOpen) return;
+            isOpen = true;
+            projectBg.classList.add('active');
+            if (!rafId) animate();
+        }
+
+        function closeProject() {
+            if (!isOpen) return;
+            isOpen = false;
+            projectBg.classList.remove('active');
+            if (!rafId) animate();
+        }
+
+        /* -----------------------
+        프로젝트 클릭 이벤트
+        ----------------------- */
+        projectBtns.on('click', function () {
+            const idx = $(this).index();
+
+            projectItems.hide();
+            projectClose.hide();
+
+            openProject();
+
+            setTimeout(() => {
+                projectItems.eq(idx).fadeIn(500);
+                projectClose.fadeIn(500);
+            }, 600);
+        });
+
+        projectClose.on('click', function () {
+            projectItems.fadeOut(300);
+            projectClose.fadeOut(300);
+
+            setTimeout(() => {
+                closeProject();
+            }, 200);
+        });
         
-       
-        
+
+
+
+
+        // 배경 반딧불 효과
+        const canvas = document.getElementById('firefly');
+        const ctx = canvas.getContext('2d');
+
+        let w, h;
+        function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        const dots = Array.from({ length: 80 }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 1 + 0.5,   // 0.5 ~ 1.5px
+        alpha: Math.random(),
+        speed: Math.random() * 0.02 + 0.005
+        }));
+
+        function fireflyMotion() {
+        ctx.clearRect(0, 0, w, h);
+
+        dots.forEach(d => {
+            d.alpha += d.speed;
+            if (d.alpha > 1 || d.alpha < 0) d.speed *= -1;
+
+            ctx.beginPath();
+            ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${d.alpha})`;
+            ctx.fill();
+        });
+
+        requestAnimationFrame(fireflyMotion);
+        }
+
+        fireflyMotion();
     </script>
 </body>
 </html>
