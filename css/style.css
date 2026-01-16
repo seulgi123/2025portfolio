@@ -55,24 +55,24 @@
 .history-work .history-work__more-btn img {width: 1.5rem;transform: rotate(90deg);transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);}
 
 .jsongroup-project {/*margin-top: 197vh;*/margin-top: clamp(28rem, 65.385vw + 4.462rem, 130rem);}
-.jsongroup-project .jsongroup-project__img-group {position: fixed;top: 0;left: 0;transform: translate(-50%,-50%);/* opacity: 0; */width: clamp(17rem, 8.333vw + 14rem, 30rem);height: clamp(34rem, 16.667vw + 28rem, 60rem);background-size: cover;pointer-events: none;transition: height 0.5s, opacity 0.5s 0.1s;}
+.jsongroup-project .jsongroup-project__img-group {position: fixed;top: 0;left: 0;transform: translate(-50%,-50%);width: clamp(34rem, 28.205vw + 23.846rem, 78rem);height: clamp(20rem, 16.667vw + 14rem, 46rem);background-size: cover;pointer-events: none;transition: height 0.5s, opacity 0.5s 0.1s;}
 .jsongroup-project .jsongroup-project__img-group .jsongroup-project__img {width: 100%;height: 0;overflow: hidden;transition: all 0.8s;position: absolute;}
 .jsongroup-project .jsongroup-project__img-group .jsongroup-project__img img {transform: scale(1.6);transition: transform 1s ease-out;width: 100%;}
 .jsongroup-project .jsongroup-project__img-group .jsongroup-project__img.active {height: 600px;}
 .jsongroup-project .jsongroup-project__img-group .jsongroup-project__img.active img {transform: scale(1);}
 .jsongroup-project .jsongroup-project__list li:first-child {border-top: 1px solid #000;}
-.jsongroup-project .jsongroup-project__list li {overflow: hidden;padding: 7rem 5.5%;border-bottom: 1px solid #000;height: 340px;font-family: 'EF_Rebecca';transition: all 0.8s ease-out;}
-.jsongroup-project .jsongroup-project__list li h3 {font-family: "Cormorant Infant", serif;display: flex;font-size: clamp(4rem, 3.846vw + 2.615rem, 10rem);font-weight: 700;transform: translate(0,0);transition: all 0.8s ease-out;line-height: 100px;color: #111;}
+.jsongroup-project .jsongroup-project__list li {overflow: hidden;padding: 7rem 5.5%;border-bottom: 1px solid #000;height: 340px;font-family: 'EF_Rebecca';transition: all 0.8s ease-out;cursor: pointer;}
+.jsongroup-project .jsongroup-project__list li h3 {font-family: "Cormorant Infant", serif;display: flex;font-size: clamp(4rem, 3.846vw + 2.615rem, 10rem);font-weight: 700;transform: translate(0,0);transition: all 0.8s ease-out;color: #111;line-height: 0.7;}
 .jsongroup-project .jsongroup-project__list li.active h3 {transform: translate(8%,0);}
-.jsongroup-project .jsongroup-project__list li h3 span {font-family: "Cormorant Infant", serif;display: inline-block;margin-right: 20px;font-size: clamp(2.4rem, 1.026vw + 2.031rem, 4rem);font-weight: 700;vertical-align: top;}
+.jsongroup-project .jsongroup-project__list li h3 span {font-family: "Cormorant Infant", serif;display: inline-block;margin-right: clamp(1.2rem, 1.154vw + 0.785rem, 3rem);font-size: clamp(2rem, 1.282vw + 1.538rem, 4rem);font-weight: 700;vertical-align: top;}
 .jsongroup-bg {position: fixed;top: 0;width: 100%;min-height: 0;z-index: 900;overflow: hidden;}
 .jsongroup-bg.active {min-height: 100%;}
 .jsongroup-bg .transition {position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
 .jsongroup-bg .jsongroup-bg__content {display: none;}
 .jsongroup-bg.active .jsongroup-bg__content {display: block;}
 .jsongroup-bg .jsongroup-bg__content {position: relative;}
-.jsongroup-bg .jsongroup-bg__content .jsongroup-bg__item {display: none;background: url(../img/project_con_img1.jpg);height: 100vh;padding: 0 clamp(3rem, 26.282vw - 6.462rem, 44rem);background-size: cover;}
-.jsongroup-bg .jsongroup-bg__content .jsongroup-bg__container {display: flex;justify-content: space-between;gap: 3rem;padding-top: 13%;}
+.jsongroup-bg .jsongroup-bg__content .jsongroup-bg__item {display: none;background: url(../img/project_con_img1.jpg);height: 100vh;padding: 0 clamp(3rem, 26.282vw - 6.462rem, 44rem);background-size: cover;overflow: auto;}
+.jsongroup-bg .jsongroup-bg__content .jsongroup-bg__container {display: flex;justify-content: space-between;gap: 8rem;padding-top: 16%;}
 .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__info {margin-top: clamp(0rem, 2.564vw - 0.923rem, 4rem);}
 .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__img {position: relative;}
 .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__img video {width: clamp(18rem, 3.462vw + 16.754rem, 23.4rem);border-radius: 2rem;}
@@ -81,22 +81,21 @@
 .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__link {display: inline-block;font-size: clamp(2rem, 1.026vw + 1.631rem, 3.6rem);color: #fff;margin-bottom: 10%;}
 .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__link img {width: clamp(1.5rem, 0.641vw + 1.269rem, 2.5rem);}
 .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__desc {font-size: clamp(1.4rem, 0.256vw + 1.308rem, 1.8rem);line-height: clamp(2.3rem, 0.321vw + 2.185rem, 2.8rem);color: #fff;text-align: left;}
-.jsongroup-bg .jsongroup-bg__content .proj_close {display: none;position: absolute;top: 4%;right: 3%;width: 30px;cursor: pointer;}
+.jsongroup-bg .jsongroup-bg__content .jsongroup-bg_close {display: none;position: absolute;top: 4%;right: 5%;width: clamp(1.6rem, 0.897vw + 1.277rem, 3rem);cursor: pointer;}
 
 
 .pacific-project {padding: 100vh 0 50vh;text-align: center;}
-.pacific-project h3 {font-family: "Cormorant Infant", serif;font-size: clamp(4rem, 3.846vw + 2.615rem, 10rem);font-weight: 700;line-height: 1.2;display: inline-block;background: linear-gradient(to right, #fff, #fff) no-repeat;background-clip: text;background-size: 0%;color: rgba(255, 255, 255, .2);transition: background-size ease 2s;margin-bottom: 10rem;}
+.pacific-project h3 {font-family: "Cormorant Infant", serif;font-size: clamp(4rem, 3.846vw + 2.615rem, 10rem);font-weight: 700;line-height: 1.2;display: inline-block;background: linear-gradient(to right, #fff, #fff) no-repeat;background-clip: text;background-size: 0%;color: rgba(255, 255, 255, .2);transition: background-size ease 2s;margin-bottom: 8%;}
 .pacific-project__content {display: flex;justify-content: center;align-items: center;}
 .pacific-project .pacific-project__img {width: clamp(10rem, 6.41vw + 7.692rem, 20rem);}
 .pacific-project .pacific-project__main .pacific-project__img {width: clamp(12rem, 8.333vw + 9rem, 25rem);}
 .pacific-project .pacific-project__list {font-size: 0;}
-.pacific-project .pacific-project__list .pacific-project__img {margin-left: -17rem;box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);border: 1px solid #d1d1d1;transform: translate(0, clamp(1rem, -1.282vw + 1.462rem, -1rem).section-work);transition: all 1s cubic-bezier(0.76, 0, 0.24, 1), transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);opacity: 0;cursor: pointer;}
+.pacific-project .pacific-project__list .pacific-project__img {margin-left: -17rem;box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);border: 1px solid #d1d1d1;transform: translate(0, clamp(1rem, -1.282vw + 1.462rem, -1rem));transition: all 1s cubic-bezier(0.76, 0, 0.24, 1), transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);opacity: 0;}
 .pacific-project .pacific-project__list .pacific-project__img:nth-child(2) {transform: translate(0, clamp(4rem, -1.923vw + 4.692rem, 1rem));}
 .pacific-project .pacific-project__list .pacific-project__img:nth-child(3) {transform: translate(0, clamp(7rem, -2.564vw + 7.923rem, 3rem));}
 .pacific-project .pacific-project__list .pacific-project__img:nth-child(4) {transform: translate(0, clamp(10rem, -3.205vw + 11.154rem, 5rem));}
-.pacific-project .pacific-project__list .pacific-project__img:hover {transform: translate(0, -20px);}
+/* .pacific-project .pacific-project__list .pacific-project__img:hover {transform: translate(0, -20px);} */
 .pacific-project.active .pacific-project__list .pacific-project__img {margin-left: clamp(-6rem, 2.564vw - 6.923rem, -2rem);opacity: 1;}
-
 
 @media(max-width: 1024px){
     .my-story span {font-size: 6rem;}
@@ -108,7 +107,8 @@
     .history-work .history-work__sibizi .history-work__group:nth-child(even) {width: 75%;}
     .history-work .history-work__more-btn {padding: 1.4rem;border: 10px solid #222;}
     .jsongroup-project .jsongroup-project__list li {height: auto;}
-    .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__container {display: block;}
+    .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__container {flex-direction: column;gap: 3rem;text-align: center;}
+    .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__img img{left: 50%;transform: translate(-50%, 0);}
     .jsongroup-bg .jsongroup-bg__content .jsongroup-bg__desc {padding-bottom: 10%;}
 }
 @media(max-width: 479px){
