@@ -240,7 +240,7 @@
                                         <p class="jsongroup-bg__desc">
                                             공구마켓 앱 내의 웹뷰 영역 퍼블리싱 <br>
                                             • 이벤트 페이지 및 상품 리스트, 결제 페이지 등 <br>
-                                            • SCSS 기반 스타일 구조 설계 및 공통 컴포넌트화 <br>
+                                            • SCSS 기반 스타일 구조 설계 <br>
                                             • GitLab을 활용한 형상관리 및 Jenkins를 통한 배포 프로세스 경험 <br>
                                             • 기술 스택 : HTML5, CSS3, JQuery, SCSS, Gulp, Git, GitLab, Jenkins, Photoshop, Figma
                                         </p>
@@ -251,7 +251,7 @@
                             <div class="jsongroup-bg__item">
                                 <div class="jsongroup-bg__container">
                                     <div class="jsongroup-bg__img">
-                                        <video src="./img/jason_vod01.mp4" muted autoplay loop playsinline></video>
+                                        <video src="./img/jason_vod02.mp4" muted autoplay loop playsinline></video>
                                         <img src="./img/phone_bg.png" alt="아이폰 목업 이미지">
                                     </div>
                                     <div class="jsongroup-bg__info">
@@ -260,7 +260,7 @@
                                         <p class="jsongroup-bg__desc">
                                             할인중독 앱 내의 웹뷰 영역 퍼블리싱 <br>
                                             • 이벤트 페이지 및 상품 리스트, 결제 페이지 등 <br>
-                                            • SCSS 기반 스타일 구조 설계 및 공통 컴포넌트화 <br>
+                                            • SCSS 기반 스타일 구조 설계 <br>
                                             • GitLab을 활용한 형상관리 및 Jenkins를 통한 배포 프로세스 경험 <br>
                                             • 기술 스택 : HTML5, CSS3, JQuery, SCSS, Gulp, Git, GitLab, Jenkins, Photoshop, Figma
                                         </p>
@@ -271,7 +271,7 @@
                             <div class="jsongroup-bg__item">
                                 <div class="jsongroup-bg__container">
                                     <div class="jsongroup-bg__img">
-                                        <video src="./img/jason_vod01.mp4" muted autoplay loop playsinline></video>
+                                        <video src="./img/jason_vod03.mp4" muted autoplay loop playsinline></video>
                                         <img src="./img/phone_bg.png" alt="아이폰 목업 이미지">
                                     </div>
                                     <div class="jsongroup-bg__info">
@@ -279,9 +279,10 @@
                                         <a href="https://simsale.co.kr" class="jsongroup-bg__link" target="_blank">sale09.kr <img src="./img/arrow_right.png" alt="화살표"></a>
                                         <p class="jsongroup-bg__desc">
                                             심쿵할인 앱 내의 웹뷰 영역 퍼블리싱 <br>
-                                            • 이벤트 페이지 및 상품리스트, 결제 페이지 등 <br>
-                                            • 기술 스택 : HTML5, CSS3, JQuery, SCSS, Gulp, Git, GitLab, Jenkins, Photoshop, Figma <br>
-                                            • 인력구성/기여도 : 퍼블리셔 (기여도 100%) / 기획팀, 디자인팀, 앱개발팀, 인프라팀, 플랫폼개발팀
+                                            • 이벤트 페이지 및 상품 리스트, 결제 페이지 등 <br>
+                                            • SCSS 기반 스타일 구조 설계 <br>
+                                            • GitLab을 활용한 형상관리 및 Jenkins를 통한 배포 프로세스 경험 <br>
+                                            • 기술 스택 : HTML5, CSS3, JQuery, SCSS, Gulp, Git, GitLab, Jenkins, Photoshop, Figma
                                         </p>
                                     </div>
                                 </div>
@@ -349,64 +350,59 @@
         
 
 
-        const historyFadeInStart = 2000;   // 2000px부터 시작
-        const historyFadeInDuration = 400; // 400px 구간 동안 나타남
-
-
-        // 배경 원
+        // 첫 화면 배경 원
         setTimeout(function(){
             sectionIntro.classList.add('active');
         },1200)
         
 
-        
 
-if (window.innerWidth <= 1024) {
-    // 혹시 PC에서 줄였다가 모바일로 가는 경우 대비
-    window.removeEventListener('scroll', myStoryScrollHandler);
-} else {
+        // my story 텍스트 애니메이션
+        if (window.innerWidth <= 1024) {
+            window.removeEventListener('scroll', myStoryScrollHandler);
+        } else {
 
-    const myStorySvgMaxWidth = 400; // PC 기준 고정
-    const myStoryBaseHeight = myStoryShape.getBoundingClientRect().height;
+            const myStorySvgMaxWidth = 400; 
+            const myStoryBaseHeight = myStoryShape.getBoundingClientRect().height;
 
-    function myStoryScrollHandler() {
-        const windowScroll = window.scrollY;
+            function myStoryScrollHandler() {
+                const windowScroll = window.scrollY;
 
-        // width
-        let myStorySvgWidth = windowScroll + 100;
-        if (myStorySvgWidth > myStorySvgMaxWidth) {
-            myStorySvgWidth = myStorySvgMaxWidth;
+                // width
+                let myStorySvgWidth = windowScroll + 100;
+                if (myStorySvgWidth > myStorySvgMaxWidth) {
+                    myStorySvgWidth = myStorySvgMaxWidth;
+                }
+
+                myStorySvg.style.width = (myStorySvgWidth + 20) + 'px';
+                myStoryShape.style.width = myStorySvgWidth + 'px';
+
+                // scale
+                let myStoryScale = 1 + ((windowScroll - 500) / 1000) * 5;
+                if (windowScroll < 500) myStoryScale = 1;
+                if (windowScroll > 1500) myStoryScale = 6;
+
+                // top
+                let myStoryTop = 50 + ((windowScroll - 500) / 1000) * 120;
+                if (windowScroll < 500) myStoryTop = 50;
+                if (windowScroll > 1500) myStoryTop = 170;
+
+                myStory.style.transform =
+                    `translate(0, -${myStoryTop}%) scale(${myStoryScale})`;
+
+                // height
+                let myStoryHeight =
+                    myStoryBaseHeight + ((windowScroll - 1200) / 500) * 80;
+
+                if (windowScroll < 1200) myStoryHeight = myStoryBaseHeight;
+                if (windowScroll > 2000) myStoryHeight = myStoryBaseHeight + 80;
+
+                myStorySvg.style.height = (myStoryHeight + 20) + 'px';
+                myStoryShape.style.height = myStoryHeight + 'px';
+            }
+
+            window.addEventListener('scroll', myStoryScrollHandler);
         }
-
-        myStorySvg.style.width = (myStorySvgWidth + 20) + 'px';
-        myStoryShape.style.width = myStorySvgWidth + 'px';
-
-        // scale
-        let myStoryScale = 1 + ((windowScroll - 500) / 1000) * 5;
-        if (windowScroll < 500) myStoryScale = 1;
-        if (windowScroll > 1500) myStoryScale = 6;
-
-        // top
-        let myStoryTop = 50 + ((windowScroll - 500) / 1000) * 120;
-        if (windowScroll < 500) myStoryTop = 50;
-        if (windowScroll > 1500) myStoryTop = 170;
-
-        myStory.style.transform =
-            `translate(0, -${myStoryTop}%) scale(${myStoryScale})`;
-
-        // height
-        let myStoryHeight =
-            myStoryBaseHeight + ((windowScroll - 1200) / 500) * 80;
-
-        if (windowScroll < 1200) myStoryHeight = myStoryBaseHeight;
-        if (windowScroll > 2000) myStoryHeight = myStoryBaseHeight + 80;
-
-        myStorySvg.style.height = (myStoryHeight + 20) + 'px';
-        myStoryShape.style.height = myStoryHeight + 'px';
-    }
-
-    window.addEventListener('scroll', myStoryScrollHandler);
-}
 
 
 
@@ -422,7 +418,6 @@ if (window.innerWidth <= 1024) {
                 portfolioWrap.classList.remove('active');
             }
 
-            
             //let historyWorkTop = historyWork.offsetTop - 2100;
             const offset = historyWork.offsetHeight * 0.4;
             const historyWorkTop = historyWork.offsetTop - offset;
@@ -462,14 +457,14 @@ if (window.innerWidth <= 1024) {
 
 
 
-            // 라인 width값 스크롤 모션
+            // '2018 - 2026' 라인 width값 스크롤 모션
             let lineProgress = (windowScroll - 4000) / 1200; // 500px 스크롤부터 시작, 1200px 스크롤 구간 동안 선이 늘어남
             if (lineProgress < 0) lineProgress = 0;
             if (lineProgress > 1) lineProgress = 1;
             const lineWidth = 170 * lineProgress;  // 170 = 라인 최종 늘어날 길이(px)
             workPeriedStartYear.style.setProperty('--line-width', `${lineWidth}px`);
 
-            // '나의 걸어온 길' 텍스트
+            // '나의 걸어온 길' 텍스트 배경 애니메이션
             let workPeriedTitleProgress = (windowScroll - 4000) / 1200;
             let workPeriedTitleWidth = workPeriedTitleProgress * 100;
             if (workPeriedTitleWidth > 100) workPeriedTitleWidth = 100;
